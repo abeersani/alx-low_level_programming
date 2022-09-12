@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Printing
+ *
+ * main - Print the string in the put function
  *
  * Return: Always 0 (Successful)
  */
