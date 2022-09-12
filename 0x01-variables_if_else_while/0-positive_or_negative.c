@@ -4,8 +4,6 @@
 
 #include <stdio.h>
 
-
-
 /**
 
 * main - print if the number is postive, zero, or negative
@@ -16,7 +14,7 @@
 
 * this program prints "Programming is positive, zero, or negative
 
-* Return: Always success
+* Return: 0
 
 */
 
@@ -26,8 +24,6 @@ int main(void)
 
 int n;
 
-
-
 srand(time(0));
 
 n = rand() - RAND_MAX / 2;
@@ -36,27 +32,23 @@ n = rand() - RAND_MAX / 2;
 
 if (n > 0)
 
-{
+
 
 	printf("%i is positive\n", n);
 
-}
+
 
 else if (n == 0)
 
-{
-
 	printf("%i is zero\n", n);
 
-}
+
 
 else if (n < 0)
 
-{
-
 	printf("%i is negative\n", n);
 
-}
+
 
 return (0);
 
