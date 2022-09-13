@@ -4,7 +4,7 @@
 
 /**
 
- * main - print putchar
+ * main - print_putchar
 
  * Return: always 0
 

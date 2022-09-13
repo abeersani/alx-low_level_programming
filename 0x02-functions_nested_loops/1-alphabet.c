@@ -2,9 +2,8 @@
 
 /**
 
- * print_alphabet - function to print abc
-
- * Return: 0
+ * print_alphabet -> print the lowercase alphabet
+* Return: 0
 
  */
 
