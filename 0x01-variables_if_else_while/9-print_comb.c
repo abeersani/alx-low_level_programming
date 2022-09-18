@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - printing numbers from 0-9 with commas and space between them
- * Return: 0
+ * main - The main function
+ * Return: 0 for success
  */
 int main(void)
 {
