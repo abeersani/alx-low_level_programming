@@ -1,17 +1,17 @@
-#include "main.h"
 #include <stdio.h>
 
+int _atoi(char *);
+
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    char s[10] = "My School";
+	int n;
 
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
-    return (0);
+	n = _atoi("          ------++++++-----+++++--98");
+	printf("%d\n", n);
+	return (0);
 }
