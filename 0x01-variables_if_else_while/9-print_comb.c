@@ -1,21 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - The main function
- * Return: 0 for success
+ *main - display all possible combinations of single-digit numbers
+ *Return: 0
  */
+
 int main(void)
 {
-	int c;
-	for (c = 48; c <= 57; c++)
+	int i;
+
+	for (i = 0; i <= 9; i++)
 	{
-		putchar(c);
-		if (c != 57)
+		putchar(i + '0');
+		if (i != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
