@@ -1,41 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_number - prints any number on the argument
- * @n: the number to be printed
- * Return: void
+ * print_number - prints an integer
+ * @n: print int
  */
 void print_number(int n)
 {
-	/* exponet counter */
-	int ec;
-	int i;
-	int n1;
+	unsigned int i;
 
 	if (n < 0)
 	{
-		n = -1 * n;
-		_putchar('-');
+		_putchar(45);
+		i = -n;
 	}
-
-	if (n > 0 && n < 10)
-		_putchar(n + '0');
-
-	else if (n >= 10)
+	else
 	{
-		n1 = n;
-		ec = 0;
-		while (n1 / 10 > 0)
-		{
-			n1 = n1 / 10;
-			ec++;
-		}
-
-		for (i = ec; i >= 0; i--)
-		{
-			_putchar(((n / (10 ^ ec)) % 10) + '0');
-		}
+		i = n;
 	}
-	_putchar('\n');
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
+	_putchar(i % 10 + '0');
 }
