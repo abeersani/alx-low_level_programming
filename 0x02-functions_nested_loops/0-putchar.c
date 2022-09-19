@@ -1,43 +1,18 @@
 #include "main.h"
 
-
-
 /**
-
- * main - print_putchar
-
- * Return: always 0
-
+ * main - The entry function
+ * Return: 0 for success
  */
-
-
-
 int main(void)
-
 {
+	char *s;
+	int i;
 
-	_putchar('_');
-
-	_putchar('p');
-
-	_putchar('u');
-
-	_putchar('t');
-
-	_putchar('c');
-
-	_putchar('h');
-
-	_putchar('a');
-
-	_putchar('r');
-
+	s = "_putchar\n";
+	i = 0;
+	while (s[i] != '\n')
+		_putchar(s[i++]);
 	_putchar('\n');
-
-
-
 	return (0);
-
-
-
 }
