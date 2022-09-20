@@ -1,10 +1,15 @@
+#include "main.h"
 #include <stdlib.h>
-
+#include <time.h>
+#include <stdio.h>
 /**
- * main - the main function
- * Return: 0 for success
  */
 int main(void)
 {
-	return (0);
+int num;
+
+srand(time(0));
+num = rand();
+printf("%i\n", num);
+return (0);
 }
