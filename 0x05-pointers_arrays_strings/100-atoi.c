@@ -1,38 +1,28 @@
-#include "main.h"
-#include <stdlib.h>
+#include "holberton.h"
 
 /**
- *_strcpy - convert a string to an integer.
- *@s: pointer parameter char
- *Return: integer value
+ * _atoi - convert a string to an integer.
+ * @s: char type string
+ * Return: integer converted
  */
+
 int _atoi(char *s)
 {
-	int i= 0, aux = 1;
-	unsigned int n = 0;
-	while (s[i])
+	int sign = 1, resp = 0, firstNum;
+
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
-		if (s[i] == '-' && (s[i + 1] >= '0' && s[i + 1] <= '9'))
+		if (s[firstNum] == '-')
 		{
-			aux = -1;
-			break;
+			sign *= -1;
 		}
-		i++;
 	}
 
-	i = 0;
-
-	while (s[i])
+	for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
-		if (s[i] >= '0' && s[i] <= '9')
-	{
-			n = (n * 10) + (s[i] - '0');
-
-			if (!(s[i + 1] >= '0' && s[i + 1] <= '9'))
-				break;
-		}
-		i++;
+		resp *= 10;
+		resp += (s[i] - 48);
 	}
 
-	return (n * aux);
+	return (sign * resp);
 }
