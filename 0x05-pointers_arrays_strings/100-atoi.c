@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdlib.h>
+
 /**
  *_strcpy - convert a string to an integer.
  *@s: pointer parameter char
