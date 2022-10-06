@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
 * _isNum - check if is a number
 *@num: string to check
@@ -17,6 +18,7 @@ return (0);
 }
 return (1);
 }
+
 /**
 * *_memset - copies a character to the firstn characters of the string pointed
 *@s: original string
@@ -31,6 +33,7 @@ for (i = 0; i < n; i++)
 s[i] = b;
 return (s);
 }
+
 /**
 * _strlen - returns the lenght of a string
 *@s: poiter of character
@@ -44,6 +47,7 @@ while (*(s + len) != '\0')
 len++;
 return (len);
 }
+
 /**
 * main - multiple 2 positive numbers
 *@argc: argument counter
