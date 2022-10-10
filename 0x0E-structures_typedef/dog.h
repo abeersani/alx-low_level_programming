@@ -1,18 +1,24 @@
 #ifndef DOG_H
 #define DOG_H
 
+#include <stdio.h>
+#include "dog.h"
+
 /**
+ *
+ *  * main - check the code
+ *
+ *   *
+ *
+ *    * Return: Always 0.
+ *
+ *     */
 
- * struct dog - A new type describing a dog.
+int main(void)
 
- * @name: The name of the dog.
+{
 
- * @age: The age of the dog.
-
- * @owner: The owner of the dog.
-
- */
-struct dog
+	   struct dog
 {
 	char *name;
 	float age;
